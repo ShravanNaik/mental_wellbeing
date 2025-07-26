@@ -33,6 +33,8 @@ hide_footer_style = """
     </style>
 """
 
+st.markdown(hide_footer_style, unsafe_allow_html=True)
+
 # Page configuration for professional presentation
 st.set_page_config(
     page_title="🧠 AI Mental Wellbeing Crew",
