@@ -22,6 +22,24 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+hide_footer_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    
+    /* This targets GitHub icon in the footer */
+    .st-emotion-cache-1y4p8pa.ea3mdgi1 {
+        display: none !important;
+    }
+
+    /* This targets the entire footer area */
+    .st-emotion-cache-164nlkn {
+        display: none !important;
+    }
+    </style>
+"""
+
 # Get API key from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
