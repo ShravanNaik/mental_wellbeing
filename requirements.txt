@@ -1,0 +1,6 @@
+python-dotenv
+langchain-openai
+crewai
+crewai-tools
+streamlit
+pysqlite3-binary
