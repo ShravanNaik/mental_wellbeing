@@ -14,13 +14,6 @@ from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
 
-# Page configuration for professional presentation
-st.set_page_config(
-    page_title="🧠 AI Mental Wellbeing Crew",
-    page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 hide_footer_style = """
     <style>
@@ -39,6 +32,16 @@ hide_footer_style = """
     }
     </style>
 """
+
+# Page configuration for professional presentation
+st.set_page_config(
+    page_title="🧠 AI Mental Wellbeing Crew",
+    page_icon="🧠",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+
 
 # Get API key from environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -571,3 +574,6 @@ st.markdown("""
     <p><em>Demonstrating the future of AI-assisted mental healthcare</em></p>
 </div>
 """, unsafe_allow_html=True)
+
+
+
